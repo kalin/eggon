@@ -1,11 +1,11 @@
 dialog {
 -moz-appearance: none;
 background-color: #E6FF66;
-padding: 20px;
+padding: 0px;
 }
 
 #eggon_selector{
- padding: 10px;
+ padding: 0px;
 }
 
 #eggon_dropdown_header{
@@ -18,10 +18,24 @@ padding: 20px;
 
 font-size: 20px;
 font-weight: bold;
-padding-bottom: 10px;
+padding: 10px;
 margin-bottom: 10px;
 border-bottom: solid 1px black;
+background-color: #ffffff;
+}
 
+#eggon_body {
+  padding: 10px;
+  
+}
+
+#eggon_buttons label{
+  padding: 3px 8px;
+  margin: 2px;
+  border: solid 1px #ddd;
+  -moz-border-radius: 4px;
+  
+  background-color: white;
 }
 
 #eggon_dropdown_success {
