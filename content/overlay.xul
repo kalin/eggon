@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://eggon/skin/overlay.css" type="text/css"?>
 <!DOCTYPE overlay SYSTEM "chrome://eggon/locale/overlay.dtd">
-<overlay id="main-window"
+<overlay id="eggon_statusbar"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <script src="overlay.js"/>
 
+<window id="main-window">
   <statusbar id="status-bar">
 
   <statusbarpanel id="eggon_stausbarIcon"
@@ -14,5 +15,17 @@
             context="eggon_statusbar_popup"
       />
   </statusbar>
-</overlay> 
+  <popupset>
+          <popup id="eggon_statusbar_popup">
+             <menuitem label="Soft Boiled" command="eggon_initializeTimer()"/>
+             <menuitem label="Medium Boiled" command="eggon_initializeTimer()"/>
+             <menuitem label="Hard Boiled" command="eggon_initializeTimer()"/>
+             <menuseparator />
+             <menuitem id="eggon_last_egg" label="Last Time" command="eggon_initializeTimer()"/>
+             
+          </popup>
+      </popupset>
 
+
+
+</overlay> 
