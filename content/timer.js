@@ -1,40 +1,35 @@
+//Written by Kalin & Jordie from the Eggon Team
+//November 5th, 2006
+//www.rely.ca/eggon
+//Some lifted and heavily modified from an open 
+//source site on the net that I lost the URL for
+
 var secs;
 var timerID = null;
-//var timerRunning = false;
 var delay = 1000;
 var initialSecs;
 
 function eggon_initializeTimer(x)
 {
-    // Set the length of the timer, in seconds
+    // x sets the length of the timer, in seconds
     secs = x;
     initialSecs = x;
-    //eggon_stopTheClock();
     eggon_startTheTimer(x);
 }
-
-/*function eggon_stopTheClock()
-{
-    if(timerRunning)
-    {
-        clearTimeout(timerID);
-    }
-    timerRunning = false;
-}*/
 
 function eggon_startTheTimer()
 {
     if (secs==0)
+    //Checks to see if your egg is complete and
+    //and performs necessary computer tasks to
+    //finish up the process.
     {
-        // eggon_stopTheClock();
-        // Here's where you put something useful that's
-        // supposed to happen after the allotted time.
-        // For example, you could display a message:
         eggon_endEggCook();
         clearTimeout(timerID);
         alert("Your egg is now perfectly cooked according to your tastes.");
     }
     else
+    //Main portion of the loop
     {
         self.status = secs;
         secs = secs - 1;
