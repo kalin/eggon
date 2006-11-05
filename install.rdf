@@ -22,14 +22,14 @@
      <em:aboutURL>chrome://eggon/content/about.xul</em:aboutURL>
      <em:iconURL>chrome://eggon/skin/mainicon.png</em:iconURL>
      
-  <em:updateURL>http://sampleextension.mozdev.org/update.rdf</em:updateURL-->
+  <em:updateURL>http://rely.ca/eggon/update.rdf</em:updateURL-->
  
      <!-- Firefox -->
      <em:targetApplication>
        <Description>
-         <em:id>{EB14E55C-AF3F-4AA8-94C3-F84EC3036E80}</em:id>
+         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
          <em:minVersion>1.5</em:minVersion>
-         <em:maxVersion>2.0</em:maxVersion>
+         <em:maxVersion>2.0.0</em:maxVersion>
        </Description>
      </em:targetApplication>
  
