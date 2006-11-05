@@ -1,0 +1,5 @@
+<!ENTITY eggon_success "Votre oeuf est maintenant cuit selon votre goût.">
+<!ENTITY eggon_soft "oeuf coque">
+<!ENTITY eggon_medium "oeuf mollet">
+<!ENTITY eggon_hard "oeuf dur">
+

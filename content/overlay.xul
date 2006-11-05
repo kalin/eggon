@@ -2,27 +2,22 @@
 <?xml-stylesheet href="chrome://eggon/skin/overlay.css" type="text/css"?>
 <!DOCTYPE overlay SYSTEM "chrome://eggon/locale/overlay.dtd">
 <overlay id="eggon_statusbar"
-    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+>
   <script src="overlay.js"/>
+  <script src="parser.js"/>
+  <script src="timer.js"/>
 
 <window id="main-window">
   <statusbar id="status-bar">
 
   <statusbarpanel id="eggon_stausbarIcon"
-            label="EggOn"
             tooltiptext="This shit helps cook eggs"
             onclick="eggon.onMenuItemCommand(event);"
-            context="eggon_statusbar_popup"
-      />
+      >
+  <label>EggOn</label><description id="eggon_countdown" />
+  </statusbarpanel>
   </statusbar>
-  <popupset>
-          <popup id="eggon_statusbar_popup">
-             <menuitem label="Soft Boiled" command="eggon_initializeTimer()"/>
-             <menuitem label="Medium Boiled" command="eggon_initializeTimer()"/>
-             <menuitem label="Hard Boiled" command="eggon_initializeTimer()"/>
-             <menuitem id="eggon_last_egg" label="Last Time" command="eggon_initializeTimer()"/>
-          </popup>
-  </popupset>
 </window>
 
 

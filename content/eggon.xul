@@ -1,25 +1,31 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://eggon/skin/overlay.css" type="text/css"?>
-<!DOCTYPE overlay SYSTEM "chrome://eggon/locale/overlay.dtd">
-<window id="eggon_selector"
-    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<!DOCTYPE overlay SYSTEM "chrome://eggon/locale/eggon.dtd">
+
+<dialog id="eggon_selector"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    buttons="accept, cancel"
+    buttonlabelaccept="make an egg according to my tastes"
+    ondialogaccept="eggon_parser(document.getElementById('eggon_user_time').value)"
+>
+  <script src="timer.js"/>
+  <script src="parser.js"/>
 <box>
  
  <vbox>
 
-  <box id="eggon_dropdown_header">
-   <description>
-    EggOn will now help you cook the perfect egg.
-   </description>
+  <box id="eggon_title_header">
+   <label>
+    EggOn
+   </label>
   </box>
 
-  <label> Hard? </label>
-  <label> Medium? </label>
-  <label> Soft? </label>
+  <label onclick="document.getElementById('eggon_user_time').value = '3:00'">&eggon_soft;</label>
+  <label onclick="document.getElementById('eggon_user_time').value = '6:00'">&eggon_medium; </label>
+  <label onclick="document.getElementById('eggon_user_time').value = '9:00'">&eggon_hard;</label>
   <hbox>
-  <label> other</label><textbox/>
+  <label></label><textbox id="eggon_user_time" value="thins"/>
   </hbox>
- <button label="Make a perfect egg" onclick="window.close();"></button>
  </vbox>
 </box>
-</window> 
+</dialog> 

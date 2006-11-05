@@ -5,8 +5,8 @@ var eggon = {
   },
 
   onMenuItemCommand: function() {
-   // window.openDialog("chrome://eggon/content/eggon.xul", "", "chrome, centerscreen, modal");
-    window.openDialog("chrome://eggon/content/success.xul", "", "chrome, centerscreen, modal");
+   window.openDialog("chrome://eggon/content/eggon.xul", "", "chrome, centerscreen, modal");
+   //window.openDialog("chrome://eggon/content/success.xul", "", "chrome, centerscreen, modal");
   }
 };
 
