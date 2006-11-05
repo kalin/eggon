@@ -1,0 +1,7 @@
+content eggon content/ 
+overlay chrome://browser/content/browser.xul chrome://eggon/content/overlay.xul
+locale eggon en-US locale/en-US/
+
+skin eggon classic/1.0 skin/
+style chrome://global/content/customizeToolbar.xul chrome://eggon/skin/overlay.css
+
