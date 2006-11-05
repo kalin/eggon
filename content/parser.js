@@ -32,7 +32,7 @@ function eggon_parser(input)
 	}
 	
 	var totalTime = (seconds * 1) + (minutes * 60) + (hours * 60 * 60) + (days * 24 * 60 * 60);
-	//eggon_initializeTimer( totalTime );
-	alert( "days: " + days + " hours: " + hours + " minutes: " + minutes + " seconds: " + seconds + " total time: " + totalTime);
+	eggon_initializeTimer( totalTime );
+	//alert( "days: " + days + " hours: " + hours + " minutes: " + minutes + " seconds: " + seconds + " total time: " + totalTime);
 	 
 }
