@@ -1,12 +1,18 @@
 <?xml version="1.0"?>
-<?xml-stylesheet href="chrome://helloworld/skin/overlay.css" type="text/css"?>
-<!DOCTYPE overlay SYSTEM "chrome://helloworld/locale/overlay.dtd">
-<overlay id="eggon-overlay"
+<?xml-stylesheet href="chrome://eggon/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://eggon/locale/overlay.dtd">
+<overlay id="main-window"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <script src="overlay.js"/>
 
-  <menupopup id="menu_ToolsPopup">
-  <menuitem id="eggon-hello" label="EggOn"
-    oncommand="Eggon.onMenuItemCommand(event);"/>
-  </menupopup>
+  <statusbar id="status-bar">
+
+  <statusbarpanel id="eggon_stausbarIcon"
+            label="EggOn"
+            tooltiptext="This shit helps cook eggs"
+            onclick="Eggon.onMenuItemCommand(event);"
+            context="eggon_statusbar_popup"
+      />
+  </statusbar>
 </overlay> 
+
