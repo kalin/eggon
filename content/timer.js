@@ -26,7 +26,8 @@ function eggon_startTheTimer()
     {
         eggon_endEggCook();
         clearTimeout(timerID);
-        alert("Your egg is now perfectly cooked according to your tastes.");
+        //alert("Your egg is now perfectly cooked according to your tastes.");
+        window.openDialog("chrome://eggon/content/success.xul", "", "chrome, centerscreen, modal")
     }
     else
     //Main portion of the loop

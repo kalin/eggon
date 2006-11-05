@@ -6,7 +6,8 @@
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
     buttons="accept, cancel"
     buttonlabelaccept="make an egg according to my tastes"
-    ondialogaccept="eggon_parser(document.getElementById('eggon_user_time').value)"
+    ondialogaccept="eggon_parser(document.getElementById('eggon_user_time').value);
+                    window.close();"
 >
   <script src="timer.js"/>
   <script src="parser.js"/>
@@ -19,12 +20,17 @@
     EggOn
    </label>
   </box>
+  <hbox id="eggon_body">
+  <vbox>
+  <label></label><textbox style="padding: 10px; font-size: 50px; text-align: center" size="9" id="eggon_user_time" value="00:03:00"/>
+  <description style="padding: 10px; text-align: center; color: #999;">HH:MM:SS</description>
+  </vbox>
 
-  <label onclick="document.getElementById('eggon_user_time').value = '3:00'">&eggon_soft;</label>
-  <label onclick="document.getElementById('eggon_user_time').value = '6:00'">&eggon_medium; </label>
-  <label onclick="document.getElementById('eggon_user_time').value = '9:00'">&eggon_hard;</label>
-  <hbox>
-  <label></label><textbox id="eggon_user_time" value="thins"/>
+  <vbox id="eggon_buttons">
+  <label onclick="document.getElementById('eggon_user_time').value = '00:03:00'">&eggon_soft;</label>
+  <label onclick="document.getElementById('eggon_user_time').value = '00:06:00'">&eggon_medium;   </label>
+  <label onclick="document.getElementById('eggon_user_time').value = '00:09:00'">&eggon_hard;</label>
+  </vbox>
   </hbox>
  </vbox>
 </box>

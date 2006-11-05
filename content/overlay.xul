@@ -14,7 +14,7 @@
   <statusbarpanel id="eggon_stausbarIcon"
             tooltiptext="This shit helps cook eggs"
             onclick="eggon.onMenuItemCommand(event);"
-      >
+  >
   <label>EggOn</label><description id="eggon_countdown" />
   </statusbarpanel>
   </statusbar>
