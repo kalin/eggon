@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://eggon/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://eggon/locale/overlay.dtd">
+<dialog id="eggon_success"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    buttons="accept">
+">
+<box>
+ 
+ <vbox>
+   <label id="eggon_title_header">  
+     EggOn
+   </label>
+  <box id="eggon_dropdown_success">
+   <description>
+    Your egg is now cooked perfectly according to your tastes.
+   </description>
+  </box>
+
+ </vbox>
+</box>
+</dialog> 

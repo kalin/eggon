@@ -11,7 +11,7 @@
   <statusbarpanel id="eggon_stausbarIcon"
             label="EggOn"
             tooltiptext="This shit helps cook eggs"
-            onclick="Eggon.onMenuItemCommand(event);"
+            onclick="eggon.onMenuItemCommand(event);"
             context="eggon_statusbar_popup"
       />
   </statusbar>
@@ -20,12 +20,10 @@
              <menuitem label="Soft Boiled" command="eggon_initializeTimer()"/>
              <menuitem label="Medium Boiled" command="eggon_initializeTimer()"/>
              <menuitem label="Hard Boiled" command="eggon_initializeTimer()"/>
-             <menuseparator />
              <menuitem id="eggon_last_egg" label="Last Time" command="eggon_initializeTimer()"/>
-             
           </popup>
-      </popupset>
-
+  </popupset>
+</window>
 
 
 </overlay> 
