@@ -1,0 +1,1 @@
+An egg timer for cooking eggs, as a Firefox extension which measures Soft, Medium, and Hard eggs.
